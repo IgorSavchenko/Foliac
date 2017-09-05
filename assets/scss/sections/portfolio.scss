@@ -1,0 +1,26 @@
+// main: ../main.scss
+.portfolio {
+  padding: 90px 0 80px;
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 30px auto 0;
+    padding: 0;
+  }
+  &__item {
+    display: block;
+    margin: 20px;
+    &--small {
+      width: calc(450 / 1180 * 100% - 20px);
+    }
+    &--wide {
+      width: calc(650 / 1180 * 100% - 20px);
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+  }
+}

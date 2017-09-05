@@ -1,0 +1,31 @@
+// main: ../main.scss
+.filters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  &-item {
+    margin: 0 10px;
+  }
+  &-link {
+    display: block;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: 700;
+    color: #3c4955;
+    line-height: 2;
+    background: #eaeaea;
+    border-radius: 2px;
+    transition: color 0.3s ease, background 0.3s ease-in-out;
+    &:hover {
+      color: #fff;
+      background: darken(#eaeaea, 30%);
+    }
+    &--active, &--active:hover {
+      background: $c-green;
+      color: $c-white;
+    }
+  }
+}

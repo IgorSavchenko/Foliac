@@ -1,0 +1,44 @@
+// main: ../main.scss
+.footer {
+  background: #3c4955;
+  padding: 70px 0;
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+  }
+  &__info {
+    color: $c-white;
+    line-height: 25px;
+    a {
+      text-decoration: none;
+      font-weight: bold;
+      color: $c-white;
+    }
+  }
+  &__social {
+    list-style-type: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    &-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px;
+    }
+    &-link {
+      display: block;
+      position: relative;
+    }
+    &-icon {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      fill: $c-white;
+    }
+  }
+}

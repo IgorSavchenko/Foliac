@@ -1,0 +1,103 @@
+// main: ../main.scss
+.header {
+  position: relative;
+  min-height: 650px;
+  // min-height: 100vh;
+  overflow-x: hidden;
+  background: rgba(60,73,85,1);
+  perspective: 800px;
+  &::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: url('../img/computer.jpg') center center no-repeat;
+    background-size: cover;
+    opacity: 0.14;
+  }
+  &__nav {
+    padding: 36px 20px 150px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+    &:hover {
+      transform: rotate(1turn);
+    }
+  }
+  &__menu {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item:not(:first-child) {
+    margin-left: 50px;
+  }
+  &__item:not(:last-child) {
+    width: 110px;
+    &::after {
+      content: '/';
+      display: inline;
+      margin-left: 60px;
+      font-size: 18px;
+      color: lighten($c-text, 10%);
+    }
+  }
+  &__link {
+    color: $c-white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: left;
+    cursor: auto;
+    transition: color 0.3s ease, border 0.2s ease;
+    &:hover, &--active {
+      border-top: 2px solid $c-green;
+      padding-top: 10px;
+      color: $c-green;
+    }
+  }
+  &__title {
+    margin: 0 auto;
+    font-family: BigJohn, sans-serif;
+    font-size: 46px;
+    color: $c-white;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    text-align: center;
+    span {
+      display: inline-block;
+      font-family: SlimJoe, sans-serif;
+      font-size: 30px;
+    }
+  }
+  &__reference {
+    display: block;
+    width: 138px;
+	  height: 39px;
+    margin: 45px auto;
+    border: 2px solid $c-green;
+	  border-radius: 3px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+	  font-size: 14px;
+    line-height: 39px;
+	  font-weight: bold;
+	  text-transform: uppercase;
+    text-decoration: none;
+	  color: $c-green;
+    transition: color 0.3s ease, background 0.3s ease-in-out;
+    &:hover {
+      background: $c-green;
+      color: $c-white;
+      animation: pulse 2s infinite;
+    }
+  }
+}

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+
+<!-- HEAD -->
+  <head>
+    <meta charset="utf-8">
+    <!-- Viewport -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest normalize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <!-- CSS animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <!-- internal CSS styles -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/icons/foliac.ico">
+    <title>Foliac</title>
+  </head>
+
+<!-- BODY -->
+  <body>
+  <!-- header -->
+  <header id="header" class="header scene">
+    <div class="container layer">
+      <nav class="header__nav">
+        <a class="header__logo" href="#">
+          <img src="assets/img/foliac.png" alt="Foliac">
+        </a>
+        <ul class="header__menu">
+          <li class="header__item"><a class="header__link header__link--active" href="#">Accueil</a></li>
+          <li class="header__item"><a class="header__link" href="#portfolio">Portfolio</a></li>
+          <li class="header__item"><a class="header__link" href="#about">About</a></li>
+          <li class="header__item"><a class="header__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <h1 class="header__title">
+        voici votre prochain portfolio
+        <span>un template psd simple et gratui</span>
+      </h1>
+      <a class="header__reference" href="#" >mes travaux</a>
+    </div>
+  </header>
+  <!-- /.header -->
+  <!-- portfolio   -->
+  <section id = "portfolio" class="portfolio">
+    <div class="container">
+      <!-- filters -->
+      <ul class="filters">
+        <li class="filters-item">
+          <a class="filters-link filters-link--active" data-filter="*" href="#">Tous les projets</a>
+        </li>
+        <li class="filters-item">
+          <a class="filters-link" data-filter="web-design" href="#">Webdesign</a>
+        </li>
+        <li class="filters-item">
+          <a class="filters-link" data-filter="ui-ux" href="#">UI/UX design</a>
+        </li>
+        <li class="filters-item">
+          <a class="filters-link" data-filter="illustration" href="#">Illustration</a>
+        </li>
+        <li class="filters-item">
+          <a class="filters-link" data-filter="motion-design" href="#">Motion design</a>
+        </li>
+      </ul>
+    <!-- items -->
+    <ul class="portfolio__list">
+        <li class="portfolio__item portfolio__item--small" data-type="web-design">
+          <!-- 450x305 -->
+          <img class="portfolio__img" src="assets/img/webdesign.jpg" alt="">
+        </li>
+        <li class="portfolio__item portfolio__item--wide" data-type="ui-ux">
+          <!-- 650x305 -->
+          <img class="portfolio__img" src="assets/img/ui-ux.jpg" alt="">
+        </li>
+        <li class="portfolio__item portfolio__item--wide" data-type="illustration">
+          <!-- 650x440 -->
+          <img class="portfolio__img" src="assets/img/illustration.jpg" alt="">
+        </li>
+        <li class="portfolio__item portfolio__item--small" data-type="motion-design">
+          <!-- 450x440 -->
+          <img class="portfolio__img" src="assets/img/motion-design.jpg" alt="">
+        </li>
+      </ul>
+    </div>
+  </section>
+  <!-- /.portfolio -->
+  <!-- about -->
+  <section id="about" class="about">
+    <div class="container">
+      <div class="about__info">
+        <h2 class="about__title">
+          Michel Dupont
+          <span>Webdesigner, illustrateur, auteur</span>
+          </h2>
+        <p class="about__text">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>
+          sed do eiusmod tempor incididunt ut labore et dolore <br>
+          magna aliqua. Ut enim ad minim veniam, quis nostrud <br>
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo <br>
+          consequat. Duis aute irure dolor in reprehenderit in <br>
+          voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+        <a class="about__reference" href="#" target="_blank">me contacter</a>
+      </div>
+    </div>
+  </section>
+  <!-- /.about -->
+  <!-- contact -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="contact__title">Me contacter</h2>
+      <form class="contact__form" action="#">
+        <div><input type="text" name="name" placeholder="Votre nom" required></div>
+        <div><input type="email" name="email" placeholder="Votre email" required></div>
+        <div><textarea name="message" rows="10" cols="80" placeholder="Votre message" spellcheck></textarea></div>
+        <button type="submit" name="submit">Envoyer</button>
+      </form>
+    </div>
+  </section>
+  <!-- /.contact -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__info">
+        <span>Copyright © 2017 by beneggen - </span>
+        <a href="http://www.beneggen.fr">www.beneggen.fr</a>
+      </div>
+      <ul class="footer__social">
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#">
+            <svg class="footer__social-icon" width="22" height="18" viewBox="0 0 22 18">
+              <path id="twitter.svg" d="M1248.39,2859.33a9.2,9.2,0,0,1-2.86,1.11,4.507,4.507,0,0,0-7.81,3.1,5.022,5.022,0,0,0,.11,1.04,12.789,12.789,0,0,1-9.3-4.75,4.574,4.574,0,0,0,1.4,6.07,4.509,4.509,0,0,1-2.04-.57v0.05a4.534,4.534,0,0,0,3.62,4.46,4.68,4.68,0,0,1-1.19.16,4.628,4.628,0,0,1-.85-0.08,4.53,4.53,0,0,0,4.21,3.16,9.05,9.05,0,0,1-5.6,1.94,9.507,9.507,0,0,1-1.08-.06,12.821,12.821,0,0,0,19.76-10.89l-0.02-.59a9.018,9.018,0,0,0,2.26-2.35,9.05,9.05,0,0,1-2.59.72A4.609,4.609,0,0,0,1248.39,2859.33Z" transform="translate(-1227 -2859)"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="55" viewBox="0 0 49 55">
+              <image id="polygon1.svg" width="49" height="55" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAA3CAMAAACSG1IzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAflBMVEVVrO7///9VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO5VrO4AAADFDnA3AAAAKHRSTlMAACGb6QuF+AFd5TfIGqIIevRT3y7AFZj9BXDwSdcntWL5NfuzttgMO/lk7gAAAAFiS0dEKcq3hSQAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCQUMBTKXuKxlAAAA3UlEQVRIx+2WSRaCMBBEo6CggBBQUAaVQaz7n1Dz1OdAhHR0yV8m/bdVxZiMqWHCNKayr4nscTa3ILDmMyXDXizxYLmwhw3HxSuuM2B4K3yy8noMP+DowgP/mxFGkBOFUmO9wXc2644RJ1v0sU3iN2OXZhgiS3dPIy8G7wVFfjf2B6V7wWEvjGOpLADlccKqmiAAdcUakgA0jBMNzogCMBqjMRqj8ReDnlf0TKTnLj3br/1xUhZu/SE6qlW6b/MfelCja3X6XGcz6OwSje2js6+Yxoa7cibuREHfFr0AFC5DZKW0RuUAAAAASUVORK5CYII="/>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#">
+            <svg class="footer__social-icon" width="22" height="20" viewBox="0 0 22 20">
+              <path id="linkedin.svg" d="M1334.3,2858h-14.6a3.548,3.548,0,0,0-3.7,3.36v13.28a3.548,3.548,0,0,0,3.7,3.36h14.6a3.548,3.548,0,0,0,3.7-3.36v-13.28A3.548,3.548,0,0,0,1334.3,2858Zm-10.05,16.25h-2.75v-8.75h2.75v8.75Zm-1.38-10a1.256,1.256,0,1,1,1.38-1.25A1.319,1.319,0,0,1,1322.87,2864.25Zm11,10h-2.75v-5a1.381,1.381,0,0,0-2.75,0v5h-2.74v-8.75h2.74v1.55a3.516,3.516,0,0,1,2.41-1.55,3.1,3.1,0,0,1,3.09,3.12v5.63Z" transform="translate(-1316 -2858)"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="55" viewBox="0 0 49 55">
+              <image id="polygon2.svg" width="49" height="55" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAA3CAMAAACSG1IzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAflBMVEUJdrT///8JdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQJdrQAAACNWU04AAAAKHRSTlMAACGb6QuF+AFd5TfIGqIIevRT3y7AFZj9BXDwSdcntWL5NfuzttgMO/lk7gAAAAFiS0dEKcq3hSQAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCQUMBSvz0wSlAAAA3UlEQVRIx+2WSRaCMBBEo6CggBBQUAaVQaz7n1Dz1OdAhHR0yV8m/bdVxZiMqWHCNKayr4nscTa3ILDmMyXDXizxYLmwhw3HxSuuM2B4K3yy8noMP+DowgP/mxFGkBOFUmO9wXc2644RJ1v0sU3iN2OXZhgiS3dPIy8G7wVFfjf2B6V7wWEvjGOpLADlccKqmiAAdcUakgA0jBMNzogCMBqjMRqj8ReDnlf0TKTnLj3br/1xUhZu/SE6qlW6b/MfelCja3X6XGcz6OwSje2js6+Yxoa7cibuREHfFr0AFC5DZKW0RuUAAAAASUVORK5CYII="/>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#">
+            <svg class="footer__social-icon" width="25" height="25" viewBox="0 0 25 25">
+              <path id="dribbble.svg" d="M1416.5,2880a11.988,11.988,0,0,1-4.85-.99,12.523,12.523,0,0,1-6.66-6.66,12.375,12.375,0,0,1,0-9.7,12.523,12.523,0,0,1,6.66-6.66,12.375,12.375,0,0,1,9.7,0,12.523,12.523,0,0,1,6.66,6.66,12.375,12.375,0,0,1,0,9.7,12.523,12.523,0,0,1-6.66,6.66A11.988,11.988,0,0,1,1416.5,2880Zm10.55-10.79c-0.09-.02-0.34-0.08-0.73-0.19a13.4,13.4,0,0,0-1.5-.29,19.031,19.031,0,0,0-2.04-.15,14.269,14.269,0,0,0-2.4.17c0.34,0.96.64,1.86,0.89,2.72s0.47,1.62.64,2.29,0.3,1.23.38,1.68,0.14,0.76.18,0.93a10.932,10.932,0,0,0,2.99-3.07A10.628,10.628,0,0,0,1427.05,2869.21Zm-6.37,8.13c-0.04-.23-0.11-0.6-0.22-1.11s-0.25-1.12-.44-1.83-0.4-1.51-.66-2.39-0.58-1.8-.96-2.77a0.188,0.188,0,0,1-.08.02,15.719,15.719,0,0,0-3.83,1.89,18,18,0,0,0-2.56,2.11,10.6,10.6,0,0,0-1.45,1.78c-0.31.5-.49,0.8-0.54,0.89a11.08,11.08,0,0,0,3.04,1.66,10.445,10.445,0,0,0,3.52.59A10.616,10.616,0,0,0,1420.68,2877.34Zm-12.12-2.68c0.05-.11.28-0.45,0.67-1.03a15.416,15.416,0,0,1,1.7-1.98,20.425,20.425,0,0,1,2.67-2.24,13.292,13.292,0,0,1,3.66-1.8,0.6,0.6,0,0,1,.2-0.07,0.648,0.648,0,0,0,.21-0.07c-0.15-.3-0.29-0.6-0.44-0.89s-0.29-.59-0.43-0.9a31.77,31.77,0,0,1-3.91.91c-1.26.21-2.4,0.36-3.4,0.45s-1.83.14-2.49,0.15-1.06.01-1.18,0.01v0.33a10.208,10.208,0,0,0,.73,3.87A11.122,11.122,0,0,0,1408.56,2874.66Zm-2.5-9.33c0.11,0,.45,0,1.03-0.01s1.31-.06,2.2-0.14,1.9-.21,3.05-0.39,2.34-.44,3.59-0.76c-0.45-.78-0.9-1.52-1.34-2.22s-0.85-1.34-1.21-1.89-0.67-1.01-.92-1.37-0.42-.59-0.49-0.7a10.4,10.4,0,0,0-3.84,3.02A10.567,10.567,0,0,0,1406.06,2865.33Zm7.95-8.19c0.07,0.09.23,0.32,0.5,0.68s0.58,0.82.95,1.38,0.77,1.2,1.22,1.91,0.88,1.47,1.31,2.27a14.265,14.265,0,0,0,2.44-1.15,14.876,14.876,0,0,0,1.71-1.21,9,9,0,0,0,1.02-.98q0.33-.4.42-0.51a10.779,10.779,0,0,0-3.24-1.98,10.476,10.476,0,0,0-3.84-.71A10.6,10.6,0,0,0,1414.01,2857.14Zm10.76,3.64c-0.05.07-.21,0.25-0.47,0.55a12.158,12.158,0,0,1-1.12,1.06,16.361,16.361,0,0,1-1.8,1.3,15.486,15.486,0,0,1-2.58,1.29c0.13,0.25.25,0.51,0.37,0.77s0.23,0.52.34,0.77l0.12,0.27a2.141,2.141,0,0,1,.12.28,17.857,17.857,0,0,1,2.61-.14c0.85,0.02,1.61.06,2.3,0.12s1.26,0.14,1.71.22,0.72,0.13.81,0.15A10.521,10.521,0,0,0,1424.77,2860.78Z" transform="translate(-1404 -2855)"/>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="49" height="55" viewBox="0 0 49 55">
+              <image id="polygon3.svg" width="49" height="55" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAA3CAMAAACSG1IzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAflBMVEXqTIn////qTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTInqTIkAAAD8O1aDAAAAKHRSTlMAACGb6QuF+AFd5TfIGqIIevRT3y7AFZj9BXDwSdcntWL5NfuzttgMO/lk7gAAAAFiS0dEKcq3hSQAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCQUMBSRjbBk0AAAA3UlEQVRIx+2WSRaCMBBEo6CggBBQUAaVQaz7n1Dz1OdAhHR0yV8m/bdVxZiMqWHCNKayr4nscTa3ILDmMyXDXizxYLmwhw3HxSuuM2B4K3yy8noMP+DowgP/mxFGkBOFUmO9wXc2644RJ1v0sU3iN2OXZhgiS3dPIy8G7wVFfjf2B6V7wWEvjGOpLADlccKqmiAAdcUakgA0jBMNzogCMBqjMRqj8ReDnlf0TKTnLj3br/1xUhZu/SE6qlW6b/MfelCja3X6XGcz6OwSje2js6+Yxoa7cibuREHfFr0AFC5DZKW0RuUAAAAASUVORK5CYII="/>
+            </svg>
+          </a>
+        </li>
+        <li class="footer__social-item">
+          <a class="footer__social-link" href="#">
+            <svg class="footer__social-icon" width="22" height="13" viewBox="0 0 22 13">
+              <path id="behance.svg" d="M1514.87,2862.84h-5.51v-1.3h5.51v1.3h0Zm-9.18,5.33a3.374,3.374,0,0,1,.53,1.91,3.8,3.8,0,0,1-1.58,3.09,3.687,3.687,0,0,1-1.54.65,9.812,9.812,0,0,1-1.93.18H1495v-13h6.61a4.328,4.328,0,0,1,3.55,1.38,3.216,3.216,0,0,1,.63,1.99,2.758,2.758,0,0,1-.64,1.91,3.126,3.126,0,0,1-1.04.74A3.073,3.073,0,0,1,1505.69,2868.17Zm-7.53-2.04h2.9a2.791,2.791,0,0,0,1.44-.33,1.2,1.2,0,0,0,.56-1.14,1.164,1.164,0,0,0-.74-1.2,5.552,5.552,0,0,0-1.61-.2h-2.55v2.87Zm5.18,3.76a1.388,1.388,0,0,0-.87-1.39,3.589,3.589,0,0,0-1.37-.22h-2.94v3.46h2.89a3.262,3.262,0,0,0,1.39-.23A1.614,1.614,0,0,0,1503.34,2869.89Zm13.58-2.11a10.4,10.4,0,0,1,.08,1.84h-7.14a2.2,2.2,0,0,0,1.03,1.97,2.73,2.73,0,0,0,1.41.35,2.206,2.206,0,0,0,1.42-.43,2.016,2.016,0,0,0,.53-0.64h2.62a3.02,3.02,0,0,1-.95,1.69,4.929,4.929,0,0,1-3.69,1.36,5.564,5.564,0,0,1-3.46-1.15,4.432,4.432,0,0,1-1.49-3.73,4.881,4.881,0,0,1,1.35-3.71,4.829,4.829,0,0,1,3.51-1.29,5.821,5.821,0,0,1,2.3.43,3.926,3.926,0,0,1,1.7,1.38A4.476,4.476,0,0,1,1516.92,2867.78Zm-2.58.24a1.976,1.976,0,0,0-.68-1.47,2.308,2.308,0,0,0-1.52-.51,2.069,2.069,0,0,0-1.53.54,2.448,2.448,0,0,0-.69,1.44h4.42Z" transform="translate(-1495 -2861)"/>
+            </svg>
+            <svg width="49" height="55" viewBox="0 0 49 55">
+              <image id="polygon4.svg" width="49" height="55" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAADEAAAA3CAMAAACSG1IzAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAflBMVEUXaf////8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8Xaf8AAAD85wXpAAAAKHRSTlMAACGb6QuF+AFd5TfIGqIIevRT3y7AFZj9BXDwSdcntWL5NfuzttgMO/lk7gAAAAFiS0dEKcq3hSQAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCQUMBQq/uhT7AAAA3UlEQVRIx+2WSRaCMBBEo6CggBBQUAaVQaz7n1Dz1OdAhHR0yV8m/bdVxZiMqWHCNKayr4nscTa3ILDmMyXDXizxYLmwhw3HxSuuM2B4K3yy8noMP+DowgP/mxFGkBOFUmO9wXc2644RJ1v0sU3iN2OXZhgiS3dPIy8G7wVFfjf2B6V7wWEvjGOpLADlccKqmiAAdcUakgA0jBMNzogCMBqjMRqj8ReDnlf0TKTnLj3br/1xUhZu/SE6qlW6b/MfelCja3X6XGcz6OwSje2js6+Yxoa7cibuREHfFr0AFC5DZKW0RuUAAAAASUVORK5CYII="/>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+  <!-- /.footer -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/2.1.3/parallax.js"></script>
+  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+  <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+  <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+  <script src="assets/js/main.js"></script>
+  </body>
+</html>

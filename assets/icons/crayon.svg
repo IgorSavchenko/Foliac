@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="crayon.svg" class="cls-1" d="M642.875,2421a3.125,3.125,0,0,1,2.5,5l-1.25,1.25-4.375-4.38,1.25-1.25A3.121,3.121,0,0,1,642.875,2421Zm-15.625,14.37L626,2441l5.625-1.25,11.562-11.56-4.375-4.38Zm12.726-7.27-8.75,8.75-1.077-1.08,8.75-8.75Z" transform="translate(-626 -2421)"/>
+</svg>
