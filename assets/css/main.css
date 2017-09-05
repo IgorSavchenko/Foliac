@@ -294,6 +294,16 @@ body {
   height: 230px;
 }
 
+.contact__form div svg {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  fill: #ffffff;
+  pointer-events: none;
+}
+
 .contact__form div input {
   width: 100%;
   height: 100%;
@@ -362,11 +372,15 @@ body {
   border: none;
   border-radius: 3px;
   outline: none;
-  transition: box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.1s ease;
 }
 
 .contact__form button:hover {
   box-shadow: 2px 2px 5px #3c4955;
+}
+
+.contact__form button:active {
+  transform: translateY(2px);
 }
 
 .footer {
