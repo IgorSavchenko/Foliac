@@ -6,18 +6,30 @@ var parallax = new Parallax(scene);
 // Scroll Reveal effects
 window.sr = ScrollReveal({ reset: true });
 sr.reveal( '.header', { duration: 500 }, 250);
-// sr.reveal('.header__logo', { container: '#header', rotate: {x: 65}, duration: 3000});
 sr.reveal('.header__menu', { container: '#header' , duration: 2000});
 sr.reveal('.header__title', { container: '#header' , duration: 1500});
-sr.reveal('.header__reference', { container: '#header' , rotate: {x: 180, y: 180}, duration: 2500});
+sr.reveal('.header__reference', { container: '#header' , rotate: {x: 180}, duration: 2500});
 sr.reveal('.portfolio', { duration: 500 }, 250);
 sr.reveal('.filters', { container: '#portfolio' , duration: 1500});
-sr.reveal('.portfolio__list', { container: '#portfolio', rotate: {x: 180, y: 180}, duration: 1500});
+sr.reveal('.portfolio__list', { container: '#portfolio', duration: 1500});
 sr.reveal('.about', { duration: 500 , viewOffset: { top: 100, right: 0, bottom: 100, left: 0 }});
-sr.reveal('.about__info', { container: '#about' , duration: 2500});
+// sr.reveal('.about__info', { container: '#about' , duration: 2500});
 sr.reveal('.contact', { duration: 500 }, 250);
+sr.reveal('.footer', { duration: 500 , viewOffset: { top: 100, right: 0, bottom: 100, left: 0 }});
 //======================================================
-// animation on hover using .css animation
+// using siema slider in about section
+let slider = new Siema({
+      selector: '.siema',
+      duration: 200,
+      easing: 'ease-out',
+      perPage: 1,
+      startIndex: 0,
+      draggable: true,
+      threshold: 20,
+      loop: true
+    });
+//======================================================
+// animation of social links icons on hover using .css animation
 $('.footer__social-link').mouseover(function() {
   $(this).addClass('animated tada');
 });

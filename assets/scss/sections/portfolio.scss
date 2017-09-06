@@ -10,7 +10,18 @@
   }
   &__item {
     display: block;
+    position: relative;
     margin: 20px;
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(72, 191, 114, 0);
+    }
     &--small {
       width: calc(450 / 1180 * 100% - 20px);
     }
@@ -22,5 +33,8 @@
     display: block;
     width: 100%;
     border-radius: 10px;
+  }
+  &:hover {
+    opacity: 0.2;
   }
 }

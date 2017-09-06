@@ -15,6 +15,9 @@
       text-decoration: none;
       font-weight: bold;
       color: $c-white;
+      &:hover {
+        text-decoration: underline;
+      }
     }
   }
   &__social {
